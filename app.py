@@ -9,9 +9,10 @@ st.set_page_config(
 )
 
 # Load trained model and encoders
-model = pickle.load(open("model/career_model.pkl", "rb"))
-interest_encoder = pickle.load(open("model/interest_encoder.pkl", "rb"))
-career_encoder = pickle.load(open("model/career_encoder.pkl", "rb"))
+model = pickle.load(open("career_model.pkl", "rb"))
+interest_encoder = pickle.load(open("interest_encoder.pkl", "rb"))
+career_encoder = pickle.load(open("career_encoder.pkl", "rb"))
+
 
 st.title("🎯 AI Career Recommendation System")
 st.markdown("### Find the best career based on your skills & interests")
